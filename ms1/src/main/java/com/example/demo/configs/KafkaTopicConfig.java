@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +26,6 @@ public class KafkaTopicConfig {
     
     @Bean
     public NewTopic topic1() {
-		return new NewTopic("baeldung", 1, (short) 1);
+		return new NewTopic("myTopic", 1, (short) 1);
    	}
 }
